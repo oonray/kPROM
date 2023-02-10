@@ -1,6 +1,6 @@
 kind: ConfigMap
 metadata:
-  name: prom-config
+  name: prom-conf
 apiVersion: v1
 data:
   prometheus.yml: |-
