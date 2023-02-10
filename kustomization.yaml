@@ -5,6 +5,5 @@ namespace: prom
 resources:
   - namespace.yaml
   - configmaps.yaml
-  - promehteus.yaml
-  - neo4j.yaml
+  - prometheus.yaml
   - service.yaml
