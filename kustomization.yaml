@@ -4,6 +4,7 @@ kind: Kustomization
 namespace: prom
 resources:
   - namespace.yaml
+  - configmap.yaml
   - promehteus.yaml
   - neo4j.yaml
   - service.yaml
