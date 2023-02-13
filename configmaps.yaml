@@ -13,6 +13,16 @@ data:
         static_configs:
         - targets: ["localhost:9090"]
 
+      - job_name: "rest-tutorial"
+        scrape_interval: 10s
+        static_configs:
+        - targets: ["10.42.0.1:28080"]
+
+      - job_name: "local"
+        scrape_interval: 10s
+        static_configs:
+        - targets: ["10.42.0.1:9100"]
+
     #remote_write:
     #  - url: "<Your Prometheus remote_write endpoint>"
     #    basic_auth:
