@@ -42,3 +42,8 @@ spec:
              name: prom-conf
           ports:
             - containerPort: 9090
+        - name: statsd
+          image: prom/statsd-exporter:latest
+          ports:
+            - containerPort: 9125 #statsd
+            - containerPort: 9102 #prometheus /metrics

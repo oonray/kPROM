@@ -10,6 +10,12 @@ spec:
     - protocol: TCP
       name: prom
       port: 9090
+    - protocol: TCP
+      name: statsd
+      port: 9125
+    - protocol: TCP
+      name: statsd_prom
+      port: 9102
 ---
 apiVersion: networking.k8s.io/v1
 kind: Ingress
