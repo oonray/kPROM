@@ -13,3 +13,12 @@ metadata:
     name: promt
   name: promt
 ---
+apiVersion: v1
+kind: Namespace
+metadata:
+  annotations:
+    linkerd.io/inject: enabled
+  labels:
+    name: promt
+  name: promt
+---
